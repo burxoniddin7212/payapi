@@ -1,0 +1,176 @@
+.pricing__inner-box{
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.pricing__heading{
+  margin: 0;
+  padding: 0;
+  margin-top: 90px;
+  margin-bottom: 70px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+}
+
+.pricing__plan-heading{
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #BA4270;
+}
+
+.pricing__plan-text{
+  max-width: 350px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+}
+
+.pricing__costs{
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+  margin-bottom:  25px;
+}
+
+.pricing__plan-hr{
+  background: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+.pricing__plan-list{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+  padding-top: 15px;
+  padding-bottom: 24px;
+}
+
+.pricing__plan-item{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+}
+
+.pricing__plan-item::before{
+  content: " ";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-image: url(../../img/pticka.png);
+  background-repeat: no-repeat;
+  background-size: 12px 8px;
+  transform: translate(-30px, 18px);
+}
+
+.pricing__plan-btn{
+  margin: 0;
+  padding: 0;
+  width: 168px;
+  height: 48px;
+  border: 1px solid #36536B;
+  box-sizing: border-box;
+  border-radius: 24px;
+  background-color: transparent;
+  margin-top: 24px;
+}
+
+.pricing__plan-btn:hover{
+  background: rgba(54, 83, 107,0.5);
+  border: none;
+  box-sizing: border-box;
+  border-radius: 24px;
+  color: white;
+}
+
+.pricing__plan-btn:active{
+  background: #36536B;
+  border: 1px solid #36536B;
+  box-sizing: border-box;
+  border-radius: 24px;
+  color: white;
+}
+
+.pricing__item-before{
+  color: rgba(54, 83, 107,0.5);
+}
+
+.pricing__item-before::before{
+  background-image: none;
+}
+
+@include breakpoint-down(768px){
+  .pricing__heading{
+    text-align: center;
+  }
+
+  .pricing__plan-heading{
+    text-align: center;
+  }
+
+  .pricing__plan-text{
+    max-width: 223px;
+    text-align: center;
+  }
+
+  .pricing__costs{
+    text-align: center;
+  }
+
+  .pricing__plan-list{
+    max-width: 223px;
+  }
+}
+
+@include breakpoint-down(720px){
+  .pricing__inner-box{
+    flex-direction: column;
+  }
+  
+  .pricing__plan-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .pricing__plan-list{
+    margin: 0;
+    padding: 0;
+  }
+
+  .pricing__plan-text{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .pricing__plan-btn{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}

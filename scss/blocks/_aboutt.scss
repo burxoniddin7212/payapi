@@ -1,0 +1,135 @@
+.abo__our{
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abo__heading{
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.430769px;
+  color: #36536B;
+  max-width: 650px;
+  margin-top: 85px;
+}
+
+  .abo__our-box{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+.abo__our-heading{
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.246154px;
+  color: #36536B;
+  margin: 0;
+  padding: 0;
+  width: 255px;
+}
+
+.abo__out-text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  max-width: 635px;
+  margin: 0;
+  padding: 0;
+}
+
+.abo__img{
+  width: 1150px;
+  height: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  //position: relative;
+}
+
+.abo__last-first{
+  //max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.abo__last-first-box-hr{
+  display: block;
+  width: 350px;
+  background: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+}
+
+
+.abo__last-first-box-text{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+}
+
+.abo__last-first-box-spn{
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 72px;
+  letter-spacing: -0.430769px;
+  color: #BA4270;
+}
+
+.qoshumcha{
+  margin-bottom: 50px;
+}
+
+.abo__our-box{
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@include breakpoint-down(1149px){
+  .abo__last-first-box-hr{
+    display: none;
+  }
+
+  .abo__heading{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down(375px){
+  .abo__our{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .abo__our-box{
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .abo__last-first{
+    flex-direction: column;
+    text-align: center;
+  }
+}
